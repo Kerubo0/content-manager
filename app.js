@@ -21,6 +21,46 @@ sLink.addEventListener ("click", () => {
 }
 })
 
+
+const root = document.documentElement;
+
+const setDropdownProps = (button, list, deg, ht, opacity) => {
+    button.querySelector('.dropdown-arrow').style.transform = `rotate(${deg}deg)`;
+    list.style.maxHeight = ht;
+    list.querySelectorAll('.dropdown-list-item').forEach(item => {
+        item.style.opacity = opacity;
+    });
+};
+
+document.querySelectorAll('.dropdown-button').forEach(button => {
+    const list = button.nextElementSibling;
+    
+    const listWrapperSizes = 3.5; // margins, paddings & borders (3.5rem)
+
+    button.addEventListener('mouseenter', () => {
+        const dropdownOpenHeight = `${100 * list.children[0].children.length + listWrapperSizes}rem`;
+        setDropdownProps(button, list, 180, dropdownOpenHeight, 1);
+    });
+
+    button.addEventListener('mouseleave', () => {
+        setDropdownProps(button, list, 0, '0', 0);
+    });
+
+    list.addEventListener('mouseenter', () => {
+        const dropdownOpenHeight = `${100 * list.children[0].children.length + listWrapperSizes}rem`;
+        setDropdownProps(button, list, 180, dropdownOpenHeight, 1);
+    });
+
+    list.addEventListener('mouseleave', () => {
+        setDropdownProps(button, list, 0, '0', 0);
+    });
+});
+//sroll behavior start
+
+
+
+//sroll behavour end
+
 /*const backToTopBtn = document.getElementById("backToTopBtn");
 
 window.addEventListener("scroll", () => {
@@ -37,18 +77,18 @@ document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }); */
 
 
-const angleOne = document.getElementById("angle-one")
-var dropdownMenu = document.getElementById('dropdownMenu');
+//const angleOne = document.getElementById("angle-one")
+//var dropdownMenu = document.getElementById('dropdownMenu');
 
   // Add click event listener to the image
-  angleOne.onclick = function() {
+ // angleOne.onclick = function() {
     // Toggle the display property
-    if (dropdownMenu.style.display === "none" || dropdownMenu.style.display === "") {
-        dropdownMenu.style.display = "block";
-    } else {
-        dropdownMenu.style.display = "none";
-    }
-};
+   // if (dropdownMenu.style.display === "none" || dropdownMenu.style.display === "") {
+     //   dropdownMenu.style.display = "block";
+    //} else {
+     //   dropdownMenu.style.display = "none";
+   // }
+//};
 
 // Get all elements with the class name 'angle'
 var angleImages = document.querySelectorAll('.angle');
@@ -72,7 +112,7 @@ angleImages.forEach(function(image) {
     });
 });
 
-var angleImages = document.querySelectorAll('.angle');
+/*var angleImages = document.querySelectorAll('.angle');
 const angleElem = document.getElementById("expand_less")
  // Get the dropdown menu
  var dropdownMenu = document.getElementById('dropdownMenu');
@@ -84,5 +124,5 @@ const angleElem = document.getElementById("expand_less")
 
     // Show the expand more image
     //angleImages.style.display = "block";
-});
+});*/
 
