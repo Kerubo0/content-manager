@@ -318,10 +318,16 @@ li {
     fill: var(--text-active);
 }
 
-.dropdown-arrow {
+/*.dropdown-arrow {
     transition: transform var(--transition-time) var(--transition-timing);
     transform: rotate(var(--rotate-arrow));
     margin-left: -5px;
+}*/
+
+.angle{
+  transition: transform var(--transition-time) var(--transition-timing);
+  transform: rotate(var(--rotate-arrow));
+  margin-left: -5px;
 }
 
 .dropdown-list-container {

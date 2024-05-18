@@ -25,7 +25,8 @@ sLink.addEventListener ("click", () => {
 const root = document.documentElement;
 
 const setDropdownProps = (button, list, deg, ht, opacity) => {
-    button.querySelector('.dropdown-arrow').style.transform = `rotate(${deg}deg)`;
+    //button.querySelector('.dropdown-arrow').style.transform = `rotate(${deg}deg)`;
+    button.querySelector('.angle').style.transform = `rotate(${deg}deg)`;
     list.style.maxHeight = ht;
     list.querySelectorAll('.dropdown-list-item').forEach(item => {
         item.style.opacity = opacity;
