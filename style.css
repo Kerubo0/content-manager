@@ -441,6 +441,7 @@ li.dropdown-list-item:hover::before {
      left: 10%;
      width: 80%;
      border-radius: 15px;
+     z-index: 9;
    }
    
    .dropdown_menu.open{
