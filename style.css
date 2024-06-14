@@ -361,7 +361,7 @@ li.dropdown-list-item {
     opacity: var(--list-opacity);
     transition: opacity 0.8s var(--transition-timing);
     /*border-top: 3px solid #212121;*/
-    margin-top: 5px;
+    /*margin-top: 5px;*/
 }
 
 li.dropdown-list-item::before {
