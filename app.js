@@ -127,3 +127,12 @@ const angleElem = document.getElementById("expand_less")
     //angleImages.style.display = "block";
 });*/
 
+document.querySelectorAll('.btn').forEach(button => {
+  button.addEventListener('click', () => {
+      document.getElementById('formContainer').style.display = 'flex';
+  });
+});
+
+document.querySelector(".form-container .close-btn").addEventListener("click", function(){
+  document.getElementById('formContainer').style.display = 'none';
+});

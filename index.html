@@ -206,7 +206,8 @@
               </div>
           </div>
          
-          <a href="#" class="action_btn">Hire Oscar</a>
+          <button class="btn primary" id="f_btn" type="button" > Hire Oscar</button>
+          <!--<a href="#" class="action_btn">Hire Oscar</a>-->
       <div class="toggle_btn">
           <i class="fa-solid fa-bars"></i>
       </div>
@@ -315,9 +316,12 @@
               </ul>
           </div>
 
-          <div class="btn_t">
-              <button class="cta_btn_t" > Hire Oscar</button>
+          <div class="flex center">
+          <button class="btn primary" type="button"> Hire Oscar</button>
           </div>
+          <!--<div class="btn_t">
+              <button class="cta_btn_t" > Hire Oscar</button>
+          </div>-->
       </div> 
   </nav>
 
@@ -397,6 +401,18 @@
           <button class="btn primary" type="button"> Hire Oscar</button>
         </div>
 
+        <div class="form-container" id="formContainer" style="display: none;">
+          <form  id="myForm" method="POST" action="/submit-form">
+            <div class="close-btn">&times;</div>
+              <h5 style="text-align: center; padding-bottom: 10px;">Join Waitlist</h5>
+              <input type="text" id="name" name="name" placeholder="Name" required>
+              <input type="email" id="email" name="email" placeholder="Email" required>
+              <div class="flex center">
+                  <button type="submit" class="submit-btn">Submit</button>
+              </div>
+          </form>
+      </div>
+
         <div class="hero-block-three flex ">
             <div class="block-text">
                 <h2> Content
@@ -470,7 +486,7 @@
         
         <div class="btn-container flex ">
           <div class="final-btns flex center">
-            <button class="btn secondary" id="btn-sl" type="button"><a href="#"> Hire Oscar Now</a> </button>
+            <button class="btn secondary" id="btn-sl" type="button"> Hire Oscar Now </button>
             <button class="btn secondary" id="btn-l" type="button"><a href="https://calendly.com/sauti/30min">Schedule a Demo</a></button>
           </div>
            <!--- <div class="rounded-btn-holder flex column">
