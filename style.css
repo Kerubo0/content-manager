@@ -9,13 +9,13 @@ html {
 body{
   margin: 0;
   padding: 0;
-  background-color: #212121;
   color: #fff;
   width: 100vw;
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
   font-weight: 500;
   overflow-x: hidden;
+  background-color: #3d3d3d;
 }
 
 /* UTILITY CLASSES ---------------------- */
@@ -58,8 +58,12 @@ a:hover{
 /* HEADER */
 header{
   position: relative;
-  padding: 0 2rem;
+  /*padding: 0 2rem; */
   background-color: #3d3d3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px
 }
 
 .navbar{
@@ -232,6 +236,7 @@ a{
 
 /* after navbar */
 
+
 .heros {
     font-family: sans-serif;
     font-size: 35px;
@@ -278,7 +283,7 @@ svg {
     justify-content: center;
     background-color: #212121;
     padding: 5px 10px;
-    margin-top: 1%;
+    /*margin-top: 1%; */
     width: max-content;
     border-radius: var(--border-radius);
 }
@@ -352,7 +357,8 @@ li {
 
 ul.dropdown-list {
     list-style-type: none;
-    padding: 0;
+    padding: 0px;
+  
 }
 
 li.dropdown-list-item {
@@ -400,6 +406,10 @@ li.dropdown-list-item:hover::before {
 .list-button:hover,
 .list-button:focus {
     color: var(--text-active);
+}
+
+.list-buttons {
+  padding: 10px;
 }
 
 .dropdown-button {
@@ -528,7 +538,8 @@ li.dropdown-list-item:hover::before {
 p{
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.75em;
+  line-height: 2.05em;
+  word-spacing: 3px;
  }
 
   .hero-text {
@@ -551,7 +562,7 @@ p{
       margin: 10px auto;
       max-width: 1300px;
       line-height: 30px;
-      word-spacing: 2px;
+      word-spacing: 3px;
     }
 
     .hero-final-text{
@@ -559,8 +570,8 @@ p{
       text-align: center;
       margin: 10px auto;
       max-width: 1100px;
-      line-height: 30px;
-      word-spacing: 2px;
+      line-height: 32px;
+      word-spacing: 3px;
     }
 
     @media (max-width: 768px){
@@ -576,8 +587,8 @@ p{
     }
 
   h1{
-      font-size: 30px;
-      font-weight: 500;
+      font-size: 35px;
+      font-weight: 600;
   }
 
   h2{
@@ -645,6 +656,7 @@ p{
   .block-text{
       margin: 20px;
       max-width: 45%;
+
   }
 
 
